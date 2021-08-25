@@ -18,102 +18,137 @@
 
 
 <body>
+    <!-- init container -->
     <div class="container">
 
+        <!-- detalles del plan -->
         <form class="row g-3">
             <div>
                 <h5>1. DEFINE LOS DETALLES DE TU PLAN</h5>
                 <hr>
             </div>
 
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Elige un nombre para tu plan de suscripción o producto:</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Define un título para tu plan">
-              </div>
-              <div class="col-md-6">
+                <!-- nombre -->
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Elige un nombre para tu plan de suscripción o producto:</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Define un título para tu plan">
+                </div>
+
+                <!-- añadir img -->
+                <div class="col-md-6">
                     <label for="formFile" class="form-label">Elegí una imagen:</label>
                     <input class="form-control" type="file" id="formFile">
-              </div>
-              <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Completa una descripción del plan:</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Agrega una descripción para contar más sobre tu plan"">
+                </div>
+
+                <!-- descripcion del plan -->
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Completa una descripción del plan:</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Agrega una descripción para contar más sobre tu plan"">
                 </div>
                 
 
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Precio:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="$00.00">
-        </div>
-
-        <div class="mb-3">
-            <p>¿La suscripción posee variantes?    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>
-        </div>
-
-        
-        
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Variante 1</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Título de variante">
-            </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Precio:</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="$ 00.00">
-            </div>
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Variante 2</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Título de variante">
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Precio</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="$ 00.00">
-              </div>
-
-              <div><button type="button" class="btn btn-link">+ agregar más variantes</button></div>
-            
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Costo único inicial</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="$ 00.00">
-              </div>
-
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Cantidad de ciclos:</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="$ 00.00">
-              </div>
-
-            <div class="col-md-6">
-                <p><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> Sin costo único inicial</p>
-
-            </div>
-
-            <div class="col-md-6">
-                <p><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> Infinitos - sin límite de ciclos</p>
-            </div>
-
-            <div>
-                <h6>Métodos de envío</h6>
-            </div>
-
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Método de envío 1</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Tipo de envío / entrega">
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Costo de envío:</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="$ 00.00">
-              </div>
-              <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Método de envío 2</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Tipo de envío / entrega">
+                <!-- precio -->
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Precio:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="$00.00">
                 </div>
+
+                <!-- checkbox suscripción con variaciones -->
+                <div class="mb-3">
+                    <p>¿La suscripción posee variantes?    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>
+                </div>
+
+        
+                <!-- variante 1 -->
                 <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Costo de envío:</label>
-                  <input type="password" class="form-control" id="inputPassword4" placeholder="$ 00.00">
+                    <label for="inputEmail4" class="form-label">Variante 1</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Título de variante">
                 </div>
-                <div><button type="button" class="btn btn-link">+ agregar más método de envío / entrega</button></div>
+
+                <!-- precio variante 1 -->
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Precio:</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="$ 00.00">
+                </div>
+
+                <!-- variante 2 -->
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Variante 2</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Título de variante">
+                </div>
+
+                <!-- precio variante 2 -->
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Precio</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="$ 00.00">
+                </div>
+
+                <!-- agregar más variantes -->
+                <div><button type="button" class="btn btn-link">+ agregar más variantes</button></div>
+            
+                <!-- Costo inicial -->
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Costo único inicial</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="$ 00.00">
+                </div>
+
+                <!-- cantidad de ciclos -->
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Cantidad de ciclos:</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="$ 00.00">
+                </div>
+
+                <!-- checkbox sin costo unico inicial -->
+                <div class="col-md-6">
+                    <p><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> Sin costo único inicial</p>
+                </div>
+
+                <!-- checkbox sin limite de ciclos -->
+                <div class="col-md-6">
+                    <p><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> Infinitos - sin límite de ciclos</p>
+                </div>
+
+
+                <!-- init Métodos de envio -->
+                <div>
+                    <h6>Métodos de envío</h6>
+                </div>
+
+                <!-- metodo de envío 1 -->
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Método de envío 1</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Tipo de envío / entrega">
+                </div>
+
+                <!-- costo metodo de envío 1 -->
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Costo de envío:</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="$ 00.00">
+                </div>
+
+                <!-- metodo de envío 2 -->
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Método de envío 2</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Tipo de envío / entrega">
+                </div>
+
+                <!-- costo metodo de envío 1 -->
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Costo de envío:</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="$ 00.00">
+                </div>
+
+                <!-- agregar otro metodo de envío  -->
+                <div>
+                    <button type="button" class="btn btn-link">+ agregar más método de envío / entrega</button>
+                </div>
 
         </form>
 
+
+        <!-- init condiciones de recurrencia -->
         <div>
+
             <div>
                 <h5>2. DEFINE LAS CONDICIONES DE RECURRENCIA</h5>
                 <hr>
@@ -128,34 +163,34 @@
                 <div class="col-md-6">
 
                     <div class="row">
-
                         <div class="col-md-3">
                             <p>Recurrencia 1:</p>
                             <p>Recurrencia 2:</p>
                         </div>
-        
+                        
+                        <!-- select recurrencia 1 -->
                         <div class="col-md-2">
                             <p>Enviar   <select name="select">
                                 <option value="value1">1</option>
                                 <option value="value2" selected>2</option>
                                 <option value="value3">3</option>
                                     </select></p>
-                            
-                              <p>Enviar <select name="select">
+
+                            <!-- select recurrencia 2 -->
+                            <p>Enviar <select name="select">
                                 <option value="value1">1</option>
                                 <option value="value2" selected>2</option>
                                 <option value="value3">3</option>
-                              </select></p>
-        
+                            </select></p>
                         </div>
         
                         <div class="col-md-2">
                             <p>vez/veces por semana </p>
                             
-                              <p>vez/veces por semana </p>
-        
+                            <p>vez/veces por semana </p>
                         </div>
         
+                        <!-- select veces por semana recurrencia 1 -->
                         <div class="col-md-2">
                             <p><select name="select">
                                 <option value="value1">1</option>
@@ -163,7 +198,7 @@
                                 <option value="value3">3</option>
                             </select>
                             </p>
-        
+                            <!-- select veces por semana recurrencia 2 -->
                             <p><select name="select">
                                 <option value="value1">1</option>
                                 <option value="value2" selected>Semana</option>
@@ -172,31 +207,30 @@
                             </p>
                         </div>
                     </div>
-
-                    
-
                 </div>
 
-                
-
-
-            
-            <div><button type="button" class="btn btn-link">+ agregar más recurrencias</button></div>
+            <!-- agregar más recurrencias -->
+            <div>
+                <button type="button" class="btn btn-link">+ agregar más recurrencias</button>
+            </div>
         </div>
 
         </div>
 
 <br><br>
 
+        <!-- procesar envíos -->
         <div>
             <div>
                 <p>¿Cómo deseas procesar los envíos?</p>
             </div>
 
+            
             <div>
                 <p><b>BÁSICO RECOMENDADO</p></b>
             </div>
 
+            <!-- checkbox ondemand/basico recomendado -->
             <div class="row">
                 <div class="col-1">
                     <input type="checkbox" name="" id="">
@@ -209,14 +243,17 @@
             <div>
                 <p><b>AVANZADO</p></b>
             </div>
+
+            <!-- checkbox avanzado -->
             <div class="row">
                 <div class="col-1">
                     <input type="checkbox" name="" id="">
                 </div>
+
                 <div class="col-4">
                     <p>Fechas específicas: decidir fechas específicas en las que voy hacer envíos. De esta forma podrás agrupar todos los envíos en días específicos. </p>
-
                 </div>
+
             </div>
             
         </div>
@@ -230,6 +267,7 @@
     <!--  INIT ONDEMAND-->
     <div>
         <p><b>ondemand</b></p>
+        
         <!--select -->
         <div class="row">
             <div class="col-md-1">
@@ -267,7 +305,11 @@
     </div>
     <!--  FINISH ONDEMAND-->
 
+
+
+<!-- finish container -->
 </div>
-</div>
+
+
 </body>
 </html>
